@@ -1,0 +1,1 @@
+必须将log4j.properties文件放入src目录下面，否则会查询警告
