@@ -73,23 +73,3 @@ org.apache.jasper.JasperException: /WEB-INF/views/show.jsp (line: 46, column: 28
  我在学习springmvc，在做一个emp案例的时候，需要将日期保存到Oracle数据库，
 但是Oracle数据库日期只有一个格式“dd-M月-yy”，默认会报错：java.sql.Exception....
 大概意思是日期格式不对，解决方法：参考“关键”代码
-import org.apache.commons.dbutils.QueryRunner;
-
-import com.kenny.entity.Emp;
-import com.kenny.util.JdbcUtils;
-import com.sun.jmx.snmp.Timestamp;
-import com.sun.org.apache.bcel.internal.generic.NEW;
-
-public class EmpDao {
-	//增加员工
-    public void Add(Emp emp) throws Exception{
-    	QueryRunner qr=JdbcUtils.getQueryRunner();
-    	String sql="insert into emps(id,username,salary,hiredate) values(?,?,?,?)";
-     
-        DateFormat df=new SimpleDateFormat("dd-M月-yy");//创建日期格式转换器，关键
-       Object[] params={emp.getId(),emp.getUsername(),emp.getSalary(),df.format(emp.getHiredate())//利用日期转换器转换日期，关键
-    			 };
-    	qr.update(sql,params);
-    }
-}
-ok
