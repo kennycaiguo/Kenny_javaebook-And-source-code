@@ -92,3 +92,4 @@ public class EmpDao {
     	qr.update(sql,params);
     }
 }
+ok
