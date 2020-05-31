@@ -1,0 +1,4 @@
+WebService就是将自己的业务层发布到web，供用户远程调用。
+
+有一个叫webxml的网站有webservice。可以用jdk的wsimport将其下载下来打成jar包
+放到程序中使用
