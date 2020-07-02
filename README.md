@@ -1,6 +1,15 @@
 # ebooks-javaebook
 java 电子书，有一些大的必须要用WinRAR压缩成多个.rar文件分批上传
 
+# Vmware虚拟机不能打开
+	打开运行命令，
+	输入services.msc
+	查看VMware Authorization Service服务有没有启动，如果没有，将其启动，必须步骤所有的VMware 相关服务都正常运行，可是虚拟机还是打开不了
+        有可能虚拟机已经损坏了，可能是因为强制关闭造成的。不过虚拟磁盘是好的。解决办法：在Vmware控制台把虚拟机删除，这个不会删除磁盘文件，	
+	新建虚拟机，选择使用现有虚拟磁盘，其余步骤一样确定，启动新建的虚拟机，发现能够正常启动了
+
+
+
 ## 
 访问JSP页面报错According to TLD or attribute directive in tag file, attribute value does not accept
 
