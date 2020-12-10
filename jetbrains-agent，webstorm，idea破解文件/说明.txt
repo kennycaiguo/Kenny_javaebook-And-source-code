@@ -1,5 +1,0 @@
-这个破解文件可以破解webstorm 和idea，有效期到2089年7月。
-破解方法，打开webstorm，关闭所有项目，将jetbrain-agent\lib\jetbrains-agent.jar
-拖入webstorm，重启webstorm，在打开的文本框在输入JetbrainsAgent安装参数，
-即打开JetbrainsAgent安装参数文本文件，将里面的内容全部复制，然后粘贴到文本框中，点击
-确定，重启webstorm，激活成功
